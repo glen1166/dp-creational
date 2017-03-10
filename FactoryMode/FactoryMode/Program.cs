@@ -1,4 +1,5 @@
-﻿using FactoryMode.SimpleMode;
+﻿//using FactoryMode.GeneralMode;
+using FactoryMode.SimpleMode;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,10 @@ namespace FactoryMode
     {
         static void Main(string[] args)
         {
-            CarFactory factory = new CarFactory();
-            ICar car = factory.CreateCar("BMW");
+            ICar car = CarFactory.CreateCar("BMW");
             car.Run();
 
-            car = factory.CreateCar("Benz");
+            car = CarFactory.CreateCar("Benz");
             car.Run();
         }
     }

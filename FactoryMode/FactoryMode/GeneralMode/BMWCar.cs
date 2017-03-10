@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryMode.SimpleMode
+namespace FactoryMode.GeneralMode
 {
-    public class BenzCar : ICar
+    public class BMWCar : ICar
     {
         public void Run()
         {
-            Console.WriteLine("The Benz car is running now.");
+            Console.WriteLine("The BMW car is running now.");
         }
     }
 }

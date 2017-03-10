@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryMode.SimpleMode
+namespace FactoryMode.GeneralMode
 {
-    public class BenzCar : ICar
+    public class BenzCar: ICar
     {
         public void Run()
         {

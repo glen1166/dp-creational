@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryMode.SimpleMode
+namespace FactoryMode.GeneralMode
 {
-    public abstract class AbstractCarFactory
+    public interface ICar
     {
-        public abstract ICar CreateCar(string type);
+        void Run();
     }
 }

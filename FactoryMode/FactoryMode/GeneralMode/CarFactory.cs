@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryMode.SimpleMode
+namespace FactoryMode.GeneralMode
 {
-    public class CarFactory
+    public class CarFactory : AbstractCarFactory
     {
-        public static ICar CreateCar(string type)
+        public override ICar CreateCar(string type)
         {
             ICar car = null;
             switch (type)
