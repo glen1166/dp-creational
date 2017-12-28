@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace FactoryMode.GeneralMode
 {
+    /// <summary>
+    /// Method to create a car
+    /// </summary>
     public abstract class AbstractCarFactory
     {
         public abstract ICar CreateCar(string type);

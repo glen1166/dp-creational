@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMode.GeneralMode
 {
-    public class BenzCar: ICar
+    public class BenzCar : ICar
     {
         public void Run()
         {
