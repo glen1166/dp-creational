@@ -1,5 +1,6 @@
 ﻿using System;
 using FactoryMode.GeneralMode;
+using AbstractMode;
 
 namespace FactoryMode
 {
@@ -13,9 +14,13 @@ namespace FactoryMode
             // car = CarFactory.CreateCar("Benz");
             // car.Run();
 
-            AbstractCarFactory factory = new CarFactory();
-            ICar car = factory.CreateCar("BMW");
-            car.Run();
+            // AbstractCarFactory factory = new CarFactory();
+            // ICar car = factory.CreateCar("BMW");
+            // car.Run();
+
+            IHumanFactory maleFactory = new MaleFactory();
+            IHuman black = maleFactory.createBlackHuman();
+            black.talk();
         }
     }
 }
